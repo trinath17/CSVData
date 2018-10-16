@@ -1,11 +1,12 @@
 # CSVData
-Java Application that parses a CSV file data and writes into a database
+Java Application that parses a CSV file data and writes into a database.
 We can run the java application which is built using maven in eclipse by
-- Import the File->Import->General->Existing projects into workspace(next)->browse archive file->Finish
+- Clone or download zip
+- Import the File->Import->General->Existing projects into workspace(next)->browse archive file(downloaded zip)->Finish
 - Right click on the application 
 - Click on Run As-> Java Application
 
-After successful run, console get populated with the log report and you may need to refresh(right click->refresh) the project 
+After successful run, console get populated with the csv data and log report and you may need to refresh(right click->refresh) the project 
 for the bad-data-<timestamp>.csv file and databasefile in the project files. 
 
 To solve this problem we first read the file using an instance of BufferedReader. 
