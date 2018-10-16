@@ -1,8 +1,8 @@
 # CSVData
 Java Application that parses a CSV file data and writes into a database.
-We can run the java application which is built using maven in eclipse by
-- Clone or download zip
-- Import the File->Import->General->Existing projects into workspace(next)->browse archive file(downloaded zip)->Finish
+We can run the java application which is built using maven in eclipse by importing the project as below
+- GitHub repository -> Clone or download zip
+- File->Import->General->Existing projects into workspace(next)->browse archive file(downloaded zip)->Finish
 - Right click on the application 
 - Click on Run As-> Java Application
 
@@ -16,6 +16,7 @@ The expression ensures that a split occurs only at commas which are followed by 
 Nevertheless, it may be easier to use a simple non-regex parser.
 
 Then after successfully parsing an entry for respective columns, we check whether the number of column values we are getting matches what we require i.e. 10. 
+Those specific 5 records which have data in morethan 10 fields gets saved in bad-data csv file
 If the entry has more than 10 columns we put that entry in bad data, which is later printed in bad-data-<timestamp>.csv file. The valid data is saved in an array. 
 
 In next step we needed to write correct entries to sqlite db. 
